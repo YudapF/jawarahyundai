@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #002C5F;
+    margin: 0;
+    padding: 0;
+    background-color: #C0CBD7;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C0CBD7;
+    padding: 40px;
+    height: 100vh;
+    /* Full screen height */
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Key Benefits Section */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E0E5EB;
+    padding: 40px;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* Allows stacking on small screens */
+}
+
+.benefit {
+    width: 30%;
+    text-align: center;
+}
+
+/* Social Proof Section */
+.social-proof {
+    background-color: #002C5F;
+    color: white;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E5EB;
+    padding: 40px;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* Ensures content wraps on smaller screens */
+    text-align: left;
+}
+
+.about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Conclusion Section */
+.conclusion {
+    background-color: #C0CBD7;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #002C5F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media screen and (max-width: 768px) {
+
+    /* Stack hero content for mobile */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Stack benefit items vertically */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .benefit {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust social proof text */
+    .social-proof {
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Stack about section */
+    .about {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .about img {
+        margin: 0 auto 20px;
+    }
+
+    /* Adjust conclusion section */
+    .conclusion {
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+}
