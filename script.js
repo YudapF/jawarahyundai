@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (event) {
             event.preventDefault();
             if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                window.location.href = "tel:+6289627039134"; // Replace with actual number
+                window.location.href = "https://wa.me/6289627039134?text=Halo,%20saya%20tertarik%20dengan%20produk%20Anda!"; // Replace with actual number
             } else {
                 window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdKv46fvIGzjWFbOzKBP8Y9JZ6dhOtRvP_3kiifrSTOBImF6g/viewform?usp=header";
             }
